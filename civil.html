@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>WAREST | CIVIL</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700|Lato" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+     <script src="bower_components/bootstrap/dist/js/wow.min.js"></script>
+     <script src="card-depth.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--navigation bar begins here-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.warest.org"><img src="assets/topmenu/logo.png" height="30px;"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="index.html#journalcategories">Journal Categories</a></li>
+        <!--drop down for author standards-->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Author Standards<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Prepare Manuscript</a></li>
+            <li><a href="#">Review Process Of Manuscript</a></li>
+            <li><a href="#">Track Your Manuscript</a></li>
+          </ul>
+        </li>
+<!-- dropdown ends-->
+        <li><a href="#">Conferences & Proceedings</a></li>
+        <!--dropdown for amenities-->
+        <!--drop down for author standards-->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Amenities<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Advertisers</a></li>
+            <li><a href="#">Membership Form</a></li>
+            <li><a href="#">Join As A Mmber</a></li>
+          </ul>
+        </li>
+<!-- dropdown ends-->
+        <!-- drop down for amenities ends-->
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <!-- sign in model begins-->
+        <!-- Button trigger modal -->
+<li><a data-toggle="modal" data-target="#signin">
+  Sign In
+</a></li>
+
+<!-- Modal -->
+<div class="modal" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Sign In</h3>
+      </div>
+      <div class="modal-body">
+        <!-- jiro comes here-->
+        <form>
+          <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-10" />
+          <label class="input__label input__label--jiro" for="input-10">
+            <span class="input__label-content input__label-content--jiro">Username</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-11" />
+          <label class="input__label input__label--jiro" for="input-11">
+            <span class="input__label-content input__label-content--jiro">Password</span>
+          </label>
+        </span>
+
+        <!-- jiro ends-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+                <!-- sign in model ends-->
+        <!--signup model begins-->
+        <li><a data-toggle="modal" data-target="#signup">
+  Sign Up
+</a></li>
+
+<!-- Modal -->
+<div class="modal" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Sign Up</h3>
+      </div>
+      <div class="modal-body">
+         <!-- jiro comes here-->
+        <form>
+          <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-20" />
+          <label class="input__label input__label--jiro" for="input-20">
+            <span class="input__label-content input__label-content--jiro">Enter Username</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-21" />
+          <label class="input__label input__label--jiro" for="input-21">
+            <span class="input__label-content input__label-content--jiro">Enter Password</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-22" />
+          <label class="input__label input__label--jiro" for="input-22">
+            <span class="input__label-content input__label-content--jiro">Enter Password Again</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-23" />
+          <label class="input__label input__label--jiro" for="input-23">
+            <span class="input__label-content input__label-content--jiro">Enter First Name</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-24" />
+          <label class="input__label input__label--jiro" for="input-24">
+            <span class="input__label-content input__label-content--jiro">Enter Last Name</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-25" />
+          <label class="input__label input__label--jiro" for="input-25">
+            <span class="input__label-content input__label-content--jiro">Enter Address</span>
+          </label>
+        </span>
+
+
+
+        <!-- jiro ends-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+        <!--signup modal ends-->       </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <!-- navigation bar ends here-->
+   <section class="container-fluid" id="branchimage">
+     <h2 class="text-center">Civil Engineering</h2>
+     <p class="text-center">This section contains the Journals for Civil Engineering.</p>
+   </section>
+   <div class="container" id="journalscontainer">
+     <div class="row">
+     <!--journals starts here-->
+     <div class="col-md-6 journals" id="leftside">
+     <div class="row">
+      <div class="col-xs-7 textpart">
+       <h4 class="heading">International Journal of Advance Trends in Civil Engineering (IJATCE)</h4>
+       <p class="issued">Issue: Feb, May, Aug, Nov</p>
+       <a href="IJATCE.html" class="">read the journal</a>
+     </div>
+     <div class="col-xs-5 imagepart"><img src="assets/branches/civil.jpg" alt=""></div>
+     </div>
+     </div>
+     
+     <!-- journal one ends-->
+     <div class="col-md-6 journals" id="rightside">
+     <div class="row">
+      <div class="col-xs-7 textpart">
+       <h4 class="heading">International Journal of Structural Engineering and Applied Mechanics – IJSEAM</h4>
+       <p class="issued">Issued:FEB MAR APR</p>
+       <a href="journals.html" class="">read the journal</a>
+     </div>
+     <div class="col-xs-5 imagepart"><img src="assets/branches/civil.jpg" alt=""></div>
+     </div>
+     </div>
+     </div>
+     <!-- second line starts-->
+<div class="row">
+     <!--journals starts here-->
+     <div class="col-md-6 journals" id="leftside">
+     <div class="row">
+      <div class="col-xs-7 textpart">
+       <h4 class="heading">International Journal of Earthquake and Structural Engineering - IJESE</h4>
+       <p class="issued">Issued:FEB MAR APR</p>
+       <a href="journals.html" class="">read the journal</a>
+     </div>
+     <div class="col-xs-5 imagepart"><img src="assets/branches/civil.jpg" alt=""></div>
+     </div>
+     </div>
+     
+     <!-- journal one ends-->
+     <div class="col-md-6 journals center-block" id="rightside">
+     <div class="row">
+      <div class="col-xs-7 textpart">
+       <h4 class="heading">Journal heading2</h4>
+       <p class="issued">Issued:FEB MAR APR</p>
+       <a href="journals.html" class="">read the journal</a>
+     </div>
+     <div class="col-xs-5 imagepart"><img src="assets/branches/civil.jpg" alt=""></div>
+     </div>
+     </div>
+     </div>
+
+     </div>
+   </div>
+   <!--footer starts-->
+    <footer class="container-fluid" id="footer">
+    <div class="text-center center-block">
+    <img src="assets/topmenu/logo.jpg" height="50px">
+    </div>
+            <div class="text-center center-block">
+                      <br />
+                <a href=""><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href=""><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href=""><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              <a href="mailto:"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+              <p style="color:#fff;margin-top:20px;font-size:11px;">All the contents published in the warest are licensed, any attempt to copy the content without permission will be considered as the violation and hence penalised.</p>
+</div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

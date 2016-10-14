@@ -1,0 +1,457 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>WAREST</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700|Lato" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="customstyles.css">
+     <script src="bower_components/bootstrap/dist/js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <a class="navbar-brand" href="http://www.warest.org">
+  <span style="background-color: #8C8C8C">
+  <img src="assets/topmenu/logo.png" height="49" width="97"></span></a><p>&nbsp;</p>
+  <p align="center">
+  <b>
+  <i>
+  <font face="Georgia" color="#2E6DA4" size="4">Wisdom Association of 
+  Research in Engineering 
+  Science &amp; Technology </font>
+  </i>
+  <span style="font-style: italic">
+  <font face="Georgia" size="4" color="#2E6DA4">(</font></span><font face="Georgia" color="#2E6DA4" style="font-style:italic" size="4">WAREST)</font></b><nav class="navbar navbar-default"></p>
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.warest.org"></a>&nbsp;</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav ">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="index.html#journalcategories">Journal Categories</a></li>
+        <!--drop down for author standards-->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Author Standards<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            <li><a href="index.html#Preparemanuscript">Prepare Manuscript</a></li>
+            <li><a href="index.html#Reviewprocess">Review Process Of Manuscript</a></li>
+            <li><a data-toggle="modal" data-target="#Trackstatus">Track Your Manuscript </a></li>
+          </ul>
+        </li>
+		<!-- dropdown ends-->
+        <li><a data-toggle="modal" data-target="#conference">Conferences & Proceedings</a></li>
+        <!--dropdown for amenities-->
+        <!--drop down for author standards-->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Amenities<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Advertisers</a></li>
+            <li><a href="#">Join As A Member</a></li>
+          </ul>
+        </li>
+<!-- dropdown ends-->
+        <!-- drop down for amenities ends-->
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <!-- sign in model begins-->
+        <!-- Button trigger modal -->
+<li><a data-toggle="modal" data-target="#signin">
+  Sign In
+</a></li>
+
+<!-- Modal -->
+<div class="modal" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Sign In</h3>
+      </div>
+      <div class="modal-body">
+        <!-- jiro comes here-->
+        <form>
+          <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-10" size="20" />
+          <label class="input__label input__label--jiro" for="input-10">
+            <span class="input__label-content input__label-content--jiro">Username</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-11" size="20" />
+          <label class="input__label input__label--jiro" for="input-11">
+            <span class="input__label-content input__label-content--jiro">Password</span>
+          </label>
+        </span>
+
+        <!-- jiro ends-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+                <!-- sign in model ends-->
+                <!-- Track demo -->
+ <!-- Modal -->
+<div class="modal" id="Trackstatus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Track your Manscript</h3>
+      </div>
+      <div class="modal-body">
+        <!-- jiro comes here-->
+        <form>
+          <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-10" size="20" />
+          <label class="input__label input__label--jiro" for="input-10">
+            <span class="input__label-content input__label-content--jiro">JournalID</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-11" size="20" />
+          <label class="input__label input__label--jiro" for="input-11">
+            <span class="input__label-content input__label-content--jiro">PaperID</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-11" size="20" />
+          <label class="input__label input__label--jiro" for="input-11">
+            <span class="input__label-content input__label-content--jiro">EmailID</span>
+          </label>
+        </span>
+
+        <!-- jiro ends-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Track Status</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+                <!-- track demo model ends-->
+
+
+  <!-- conference demo -->
+ <!-- Modal -->
+<div class="modal" id="conference" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h5 class="modal-title" id="myModalLabel">WAREST runs and leads conferences all around the globe.
+If your organization or institution or industry is interested in hosting a jointly at your venue with us, kindly send the following details.</h5>
+      </div>
+      <div class="modal-body">
+     
+        <!-- jiro comes here-->
+        <form>
+          <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-10" size="20" />
+          <label class="input__label input__label--jiro" for="input-10">
+            <span class="input__label-content input__label-content--jiro">Name</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-11" size="20" />
+          <label class="input__label input__label--jiro" for="input-11">
+            <span class="input__label-content input__label-content--jiro">Organization / Industry</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-11" size="20" />
+          <label class="input__label input__label--jiro" for="input-11">
+            <span class="input__label-content input__label-content--jiro">EmailID</span>
+          </label>
+        </span>
+<span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-11" size="20" />
+          <label class="input__label input__label--jiro" for="input-11">
+            <span class="input__label-content input__label-content--jiro">Contact Number</span>
+          </label>
+        </span>
+<span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-11" size="20" />
+          <label class="input__label input__label--jiro" for="input-11">
+            <span class="input__label-content input__label-content--jiro">Address</span>
+          </label>
+        </span>
+<span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-11" size="20" />
+          <label class="input__label input__label--jiro" for="input-11">
+            <span class="input__label-content input__label-content--jiro">Subject</span>
+          </label>
+        </span>
+<span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-11" size="20" />
+          <label class="input__label input__label--jiro" for="input-11">
+            <span class="input__label-content input__label-content--jiro">Message</span>
+          </label>
+        </span>
+
+
+
+        <!-- jiro ends-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+                <!-- conference demo model ends-->
+
+
+                
+        <!--signup model begins-->
+        <li><a data-toggle="modal" data-target="#signup">
+  Sign Up
+</a></li>
+
+<!-- Modal -->
+<div class="modal" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Sign Up</h3>
+      </div>
+      <div class="modal-body">
+         <!-- jiro comes here-->
+        <form action="signup.php" method="POST">
+          <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-20" size="20" />
+          <label class="input__label input__label--jiro" for="input-20">
+            <span class="input__label-content input__label-content--jiro">Enter Username</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-21" size="20" />
+          <label class="input__label input__label--jiro" for="input-21">
+            <span class="input__label-content input__label-content--jiro">Enter Password</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-22" size="20" />
+          <label class="input__label input__label--jiro" for="input-22">
+            <span class="input__label-content input__label-content--jiro">Enter Password Again</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-23" size="20" />
+          <label class="input__label input__label--jiro" for="input-23">
+            <span class="input__label-content input__label-content--jiro">Enter First Name</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-24" size="20" />
+          <label class="input__label input__label--jiro" for="input-24">
+            <span class="input__label-content input__label-content--jiro">Enter Last Name</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-25" size="20" />
+          <label class="input__label input__label--jiro" for="input-25">
+            <span class="input__label-content input__label-content--jiro">Enter Email Address</span>
+          </label>
+        </span>
+
+
+
+        <!-- jiro ends-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+        <!--signup modal ends-->       </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <!-- navigation bar ends here-->
+	
+	
+	<?php
+	if(isset($_SESSION['id'])) {
+	echo $_SESSION['id'];
+	}
+	else {
+	echo " You are not logged in!";
+	}
+	?>
+	
+	<form action ="logout.php" method ="POST">
+	<button> LOG OUT </button>
+	</form>
+	
+    <div class="container-fluid" id="firstcontainer"> 
+    <div class="hero">
+    <h1 class="text-center center-block wow fadeIn">OPEN FOR DISCOVERY</h1>
+    <h4 class="text-center center-block wow fadeIn" data-wow-delay=".5s">The Wisdom Association of Research in Science, Engineering and Technology (WAREST) is a registered non-profitable association. The main 
+objective is to recognize and explore abilities and achievements ranging from academic research and professional communities to
+industry professionals in a wide range of topics in Science, Engineering and Technology.
+ 
+</h4></div>
+    </div>
+    <div class="container" id="secondcontainer">
+      <div class="row" id="secondcontainerrow">
+      <div class="col-sm-4 wow fadeIn" id="search">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        <p>Find The Journal Thats Right For You. </p>
+      </div>
+      <div class="col-sm-4 wow fadeIn" id="pencil" data-wow-delay=".5s">
+        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+        <p>Know about our wonderful authors </p>
+      </div>
+      <div class="col-sm-4 wow fadeIn" data-wow-delay="1s" id="user">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        <p>Find The Gatherings And Conferences That Would Boost Yourself. </p>
+      </div>
+    </div>
+    </div>
+    
+    <div class="container-fluid" id="thirdcontainer">
+      <p>Created to recognize and explore abilities and achievements ranging from academic research to industry professionals in a wide range of topics.</p>
+      <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#signup">
+        Sign Up
+      </button>
+    </div>
+    
+     
+    <div class="container" id="fourthcontainer">
+      <div class="row" id="journalcategories">
+      <h2 class="wow fadeInDown">Explore WAREST Journals</h2>
+      <p class="wow fadeIn" data-wow-delay=".5s">Covers Journals Over Different Streams</p>
+      <div class="col-sm-12 bigbox" id="mechanical">
+        <a href="mechanical.html"><h4 class="defaultpadding">WAREST| Mechanical</h4></a>
+      </div>
+      </div>
+      <div class="row" id="civilandelectronics">
+        <div class="col-xs-6" id="civil">
+        <a href="civil.html"><h4 class="defaultpadding">WAREST| Civil</h4></a>
+        </div>
+        <div class="col-xs-6" id="electronics">
+        <a href="electronics.html"><h4>WAREST| Electronics</h4></a>
+        </div>
+      </div>
+      <div class="row" id="csandeee">
+        <div class="col-xs-6" id="cs">
+        <a href="computerscience.html"><h4>WAREST| Computer Science</h4></a>
+        </div>
+        <div class="col-xs-6" id="eee">
+        <a href="electrical.html"><h4>WAREST| Electrical</h4></a>
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+    
+
+    <div class="container">
+      <div class="jumbotron" >
+        <div id="Preparemanuscript">
+            <h2>PREPARE MANUSCRIPT</h2>
+            <strong><p>Following are the general guidelines</p></strong>
+            <ul>
+              <li>Paper should contain sufficient new materials, with keywords.</li>
+              <li>Scope and Objectives are to be highlighted</li>
+              <li>Presented concisely as per journal standards.</li>
+              <li>Experimental techniques and methods are to be explained.</li>
+              <li>Results should be achieved and are formulated.</li>
+              <li>Conclusions to be precised as per the data and results.</li>
+              <li>All references are to be clearly cited.</li>
+            </ul>
+            <hr>
+            <strong><p>Following are the Manuscript guidelines</p></strong>
+            <ul>
+              <li>Manuscript should have maximum of 15 pages.</li>
+              <li>Manuscript should be free from plagiarism [ i.e., Manuscript should contain originality]</li>
+              <li>Manuscript must be written in English language using MS-Word (.doc or .docx format only)</li>
+              <li>Maximum numbers of author are Four.</li>
+            <li>Authors are required to sign the Copy right form once their manuscript is accepted, for further publishing process</li>
+            </ul>
+            <hr>
+              
+        
+          <h2> REVIEW PROCESS OF MANUSCRIPT </h2>
+          <ul>
+            <li>Manuscript is PEER reviewed.</li>
+            <li>Manuscript is checked for originality.</li>
+            <li>Manuscript is sent to editor in chief for approval and is asked to revert back with comments and suggestions (if needed) for the
+          further publication. </li>
+            <li>Acceptance letter is sent to the author.</li>
+            <li>Online manuscript is published within 7 days from the acceptance of the manuscript.</li>
+            <li>Hard copies of the manuscript and Certificates are provided on demand with the nominal charges as per the journal standards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+
+<hr>
+    <div class="container-fluid" id="footer">
+    <div class="text-center center-block">
+    <img src="assets/topmenu/logo.png" height="50px">
+    </div>
+            <div class="text-center center-block">
+                      <br />
+                <a href=""><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href=""><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href=""><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              <a href="mailto:"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                      </h4>
+              <p style="color:#fff;margin-top:20px;font-size:11px;">All the contents published in the WAREST are licensed, any attempt to copy the content without permission will be considered as the violation and hence penalised.</p>
+</div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>WAREST | Journals</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700|Lato" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+     <script src="bower_components/bootstrap/dist/js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--navigation bar begins here-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.warest.com"><img src="assets/topmenu/logo.png" height="30px;"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="index.html#journalcategories">Journal Categories</a></li>
+        <!--drop down for author standards-->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Author Standards<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Prepare Manuscript</a></li>
+            <li><a href="#">Review Process Of Manuscript</a></li>
+            <li><a href="#">Track Your Manuscript</a></li>
+          </ul>
+        </li>
+<!-- dropdown ends-->
+        <li><a href="#">Conferences & Proceedings</a></li>
+        <!--dropdown for amenities-->
+        <!--drop down for author standards-->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Amenities<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Advertisers</a></li>
+            <li><a href="#">Membership Form</a></li>
+            <li><a href="#">Join As A Mmber</a></li>
+          </ul>
+        </li>
+<!-- dropdown ends-->
+        <!-- drop down for amenities ends-->
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <!-- sign in model begins-->
+        <!-- Button trigger modal -->
+<li><a data-toggle="modal" data-target="#signin">
+  Sign In
+</a></li>
+
+<!-- Modal -->
+<div class="modal" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Sign In</h3>
+      </div>
+      <div class="modal-body">
+        <!-- jiro comes here-->
+        <form>
+          <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-10" />
+          <label class="input__label input__label--jiro" for="input-10">
+            <span class="input__label-content input__label-content--jiro">Username</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-11" />
+          <label class="input__label input__label--jiro" for="input-11">
+            <span class="input__label-content input__label-content--jiro">Password</span>
+          </label>
+        </span>
+
+        <!-- jiro ends-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+                <!-- sign in model ends-->
+        <!--signup model begins-->
+        <li><a data-toggle="modal" data-target="#signup">
+  Sign Up
+</a></li>
+
+<!-- Modal -->
+<div class="modal" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Sign Up</h3>
+      </div>
+      <div class="modal-body">
+         <!-- jiro comes here-->
+        <form>
+          <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-20" />
+          <label class="input__label input__label--jiro" for="input-20">
+            <span class="input__label-content input__label-content--jiro">Enter Username</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-21" />
+          <label class="input__label input__label--jiro" for="input-21">
+            <span class="input__label-content input__label-content--jiro">Enter Password</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="password" id="input-22" />
+          <label class="input__label input__label--jiro" for="input-22">
+            <span class="input__label-content input__label-content--jiro">Enter Password Again</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-23" />
+          <label class="input__label input__label--jiro" for="input-23">
+            <span class="input__label-content input__label-content--jiro">Enter First Name</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-24" />
+          <label class="input__label input__label--jiro" for="input-24">
+            <span class="input__label-content input__label-content--jiro">Enter Last Name</span>
+          </label>
+        </span>
+        <span class="input input--jiro">
+          <input class="input__field input__field--jiro" type="text" id="input-25" />
+          <label class="input__label input__label--jiro" for="input-25">
+            <span class="input__label-content input__label-content--jiro">Enter Address</span>
+          </label>
+        </span>
+
+
+
+        <!-- jiro ends-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+        <!--signup modal ends-->       </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <!-- navigation bar ends here-->
+    <div class="container-fluid" id="journalarea">
+      <div class="row" id="journalimage">
+        
+      </div></div>
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12" id="journaltext">
+        <h3 class="text-center">This is the sample heading</h3>
+        <p id="journalcontent"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam mollitia ut dolor, atque quas, explicabo quis consequuntur fuga dolorum blanditiis quia, est praesentium sint tenetur? Animi placeat quas distinctio commodi?</span>
+        <span>Vel eos ducimus, nisi tempore provident obcaecati officia est ratione optio aperiam numquam labore corrupti nihil iusto dolores, ut repudiandae ipsam distinctio accusamus. Placeat consequuntur recusandae illum ab temporibus corrupti.</span>
+        <span>Temporibus, aspernatur, corrupti. Vitae soluta quam neque praesentium a dolor vel, asperiores. Aspernatur architecto consequuntur, voluptas officiis harum. Nobis provident, commodi necessitatibus voluptas quibusdam error aut vero a cum nostrum!</span>
+        <span>Praesentium libero illo fugit. Nemo accusantium tenetur quaerat amet, accusamus delectus alias porro error aperiam maiores hic minima voluptas quo, eius laboriosam sapiente, at, a iste dolore ea repellat nostrum!</span>
+        <span>Numquam ullam delectus error vero accusantium provident commodi perferendis quam fuga voluptates amet assumenda ab qui veritatis aut perspiciatis, ipsa officia pariatur quibusdam obcaecati distinctio suscipit aperiam, harum repellat. Impedit!</span>
+        <span>Consequuntur, nemo, ducimus? Quod nobis ea dolorem accusamus, ullam accusantium aspernatur voluptatum, temporibus amet recusandae laudantium reiciendis quae, aliquid sit. Reprehenderit, animi aperiam reiciendis facilis voluptatibus, minima blanditiis architecto dolore?</span>
+        <span>Earum architecto veniam odit, suscipit dolor, consequatur unde fuga distinctio quis, molestias minima eius sed quibusdam perspiciatis ipsam explicabo! Doloremque corrupti animi dolorum eum, earum repudiandae expedita quod. Minima, sint.</span>
+        <span>Unde optio quae, sapiente omnis commodi accusamus consequuntur nulla veritatis suscipit eum quod, illum perferendis ipsum deleniti voluptatum facere quisquam quo? Laudantium ratione, molestiae fugit neque deleniti corporis quae deserunt.</span>
+        <span>Aliquid exercitationem sunt in architecto suscipit voluptates sint laudantium, voluptate excepturi iusto vero. Temporibus repellat, vero quaerat iure. Reiciendis molestias adipisci aperiam ducimus. Esse quae officia fugiat ipsam magni et.</span>
+        <span>Saepe pariatur quisquam dignissimos sit provident perferendis cum sapiente, laudantium sequi molestias quo labore, perspiciatis voluptatem, quam expedita recusandae. Suscipit excepturi expedita sit cupiditate dolor! Sint, sequi quisquam vero laborum.</span>
+        <span>Dolorum, voluptate cum neque nobis dicta aut amet obcaecati, ad nulla, eius beatae excepturi reiciendis. Sapiente sit enim, itaque vero incidunt illum modi dicta maiores molestias ex. Architecto, dolorem similique!</span>
+        <span>Hic repellat fuga sit officiis, ducimus sequi, cupiditate inventore quidem error porro quia, nostrum natus! Cupiditate odio nulla, maxime, voluptates, at nam enim eaque dolor cum omnis cumque non laborum.</span>
+        <span>Unde obcaecati itaque voluptates repellendus tempora dignissimos sint velit facere. Veniam soluta est obcaecati sapiente fuga reiciendis, id minima, voluptates aliquid dolorum cumque laudantium laborum labore voluptas dignissimos natus alias.</span>
+        <span>Eligendi earum, ab deleniti ex, aliquam vitae cumque illo, ea, dicta neque dignissimos temporibus possimus illum culpa. Dolorem sapiente saepe asperiores, modi magnam hic itaque fugit soluta, repudiandae, dignissimos vitae!</span>
+        <span>Reprehenderit, eum a harum nam quasi porro consequatur nihil iste doloremque quidem, tempora adipisci, similique dolorum officiis iure maiores itaque voluptatibus esse ad consectetur facere optio laborum, tenetur ex. Autem.</span>
+        <span>Sint suscipit, laboriosam quisquam itaque voluptate libero qui quia minus, perferendis minima facilis voluptas omnis repellendus exercitationem maxime ab! Commodi inventore facilis quasi non laborum, dolor numquam quia est! Officiis.</span>
+        <span>Aut assumenda qui necessitatibus reiciendis doloribus quisquam natus sequi quo, nostrum nihil sapiente mollitia impedit cumque id dolor inventore minima, nulla optio! Non, labore, ratione! Maxime praesentium suscipit reiciendis quod.</span>
+        <span>Aliquid deleniti, accusantium tempora laborum excepturi nam aspernatur enim. Enim dolores commodi, facilis. Vitae quidem, eos odio consequuntur fugiat itaque quaerat aliquam, error iste impedit, voluptas sequi unde repellendus cum?</span>
+        <span>Quos praesentium consequuntur saepe! Eaque cupiditate iste distinctio aliquid, aliquam, sapiente sequi dignissimos rem explicabo optio reiciendis delectus id. Obcaecati, deserunt, modi impedit praesentium voluptas voluptatum cum earum aliquam. Facere!</span>
+        <span>Harum quos impedit cum, nobis, quidem explicabo voluptates. Eligendi ut magnam, totam aliquid. In, nostrum, beatae. Ullam voluptate blanditiis nostrum id vero eligendi dolores, rem enim sit voluptatum corrupti magni.</span>
+        <span>Quam nemo et suscipit ipsa itaque debitis aliquid? In consectetur similique natus eaque tempora, sequi necessitatibus, ipsum accusantium error, mollitia harum, sint itaque dolorem fuga minima quibusdam. Saepe, perferendis, possimus.</span>
+        <span>Suscipit facilis cum officia. At dolorum dolor accusamus maiores nesciunt quae quidem fuga molestias unde, perspiciatis adipisci ducimus magnam eligendi possimus, modi ratione. Ratione at voluptatibus ipsa sit veniam quia!</span>
+        <span>Nisi quo, similique itaque, veniam quod dolorem quasi temporibus illo, unde libero animi soluta pariatur consectetur corporis eius eos assumenda mollitia nostrum. Optio ab dicta, assumenda rem. Porro, quisquam, laboriosam.</span>
+        <span>Esse excepturi id, nobis perferendis minus quod unde dignissimos incidunt minima possimus libero. Voluptatem ipsa possimus fugit nam quae dolorum velit modi, iusto suscipit rerum quam sed, laudantium obcaecati necessitatibus.</span>
+        <span>Quam sunt excepturi iusto ratione, aut! Odio dignissimos aspernatur libero dolorem adipisci, sapiente in, dolores nemo autem, veritatis laudantium ea voluptatum quae numquam inventore architecto placeat consequatur eligendi temporibus nihil!</span>
+        <span>Voluptatem placeat aperiam asperiores neque dicta quos labore quae ipsum, eius accusantium! Debitis repudiandae vero, earum ab, ullam dignissimos, dicta autem quasi, id facere aut. Accusantium perferendis quis amet fuga.</span>
+        <span>Quas architecto, repellat fuga inventore corrupti perferendis adipisci amet reiciendis culpa expedita perspiciatis voluptates earum quibusdam ut nobis nulla commodi dolor dignissimos debitis quo. Alias, dolor sequi atque dicta cupiditate.</span>
+        <span>Neque assumenda cumque, quaerat impedit accusamus hic omnis eveniet similique molestiae. Qui, accusantium quod amet, sunt suscipit autem dolorem modi harum reiciendis aspernatur ab nobis, cupiditate vero molestias rem mollitia.</span>
+        <span>Aliquid error saepe, quaerat ex, dignissimos dolorem aut voluptate sit molestiae expedita, sapiente consequatur iusto ipsam consectetur. Iusto, qui in deserunt voluptatibus culpa iure maxime eos accusantium id recusandae fuga!</span>
+        <span>A enim minima iste repellat expedita voluptatem velit, consequuntur ab fugiat reiciendis amet, quisquam deleniti. Ad aspernatur voluptatem sunt, blanditiis tempore, unde tenetur nemo architecto quasi ea, distinctio perferendis delectus.</span></p>
+      </div>
+    </div></div>
+    <div class="container-fluid" id="footer">
+    <div class="text-center center-block">
+    <img src="assets/topmenu/logo.png" height="50px">
+    </div>
+            <div class="text-center center-block">
+                      <br />
+                <a href=""><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href=""><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href=""><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              <a href="mailto:"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+              <p style="color:#fff;margin-top:20px;font-size:11px;">All the contents published in the WAREST are licensed, any attempt to copy the content without permission will be considered as the violation and hence penalised.</p>
+</div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
